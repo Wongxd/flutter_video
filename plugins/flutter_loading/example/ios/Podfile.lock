@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - loading (0.0.1):
+    - Flutter
+    - MBProgressHUD
+  - MBProgressHUD (1.1.0)
+
+DEPENDENCIES:
+  - Flutter (from `.symlinks/flutter/ios-release`)
+  - loading (from `.symlinks/plugins/loading/ios`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MBProgressHUD
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: ".symlinks/flutter/ios-release"
+  loading:
+    :path: ".symlinks/plugins/loading/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
+  loading: 4b7be01928cd3a84b539c9f8ed534a583bcc943e
+  MBProgressHUD: 2e7afcade2b6ac54f29d0640f1dc0267a69a4c7d
+
+PODFILE CHECKSUM: 1e5af4103afd21ca5ead147d7b81d06f494f51a2
+
+COCOAPODS: 1.5.3

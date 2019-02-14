@@ -1,0 +1,79 @@
+package tech.shmy.plugins.txxg;
+
+import android.content.Context;
+import android.util.Log;
+
+import com.tencent.android.tpush.XGIOperateCallback;
+import com.tencent.android.tpush.XGNotifaction;
+import com.tencent.android.tpush.XGPushManager;
+import com.tencent.android.tpush.XGPushNotifactionCallback;
+
+import io.flutter.plugin.common.MethodCall;
+import io.flutter.plugin.common.MethodChannel;
+import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
+import io.flutter.plugin.common.MethodChannel.Result;
+import io.flutter.plugin.common.PluginRegistry.Registrar;
+
+/** TxXgPlugin */
+public class TxXgPlugin implements MethodCallHandler {
+
+  private Context context;
+
+  public TxXgPlugin(Context context) {
+    this.context = context;
+  }
+  /** Plugin registration. */
+  public static void registerWith(Registrar registrar) {
+    final MethodChannel channel = new MethodChannel(registrar.messenger(), "tx_xg");
+    channel.setMethodCallHandler(new TxXgPlugin(registrar.context()));
+  }
+
+  @Override
+  public void onMethodCall(MethodCall call, Result result) {
+    if (call.method.equals("init")) {
+      this.init();
+//      result.success("Android " + android.os.Build.VERSION.RELEASE);
+    } else {
+      result.notImplemented();
+    }
+  }
+
+  private void init () {
+    Log.i("test","init...");
+    XGPushManager.registerPush(context, new XGIOperateCallback() {
+      @Override
+      public void onSuccess(Object o, int i) {
+        Log.i("test", "注册成功");
+        setCallBack();
+      }
+
+      @Override
+      public void onFail(Object o, int i, String s) {
+        Log.i("test", "注册失败");
+      }
+    });
+
+  }
+
+  private void setCallBack () {
+    XGPushManager
+            .setNotifactionCallback(new XGPushNotifactionCallback() {
+
+              @Override
+              public void handleNotify(XGNotifaction xGNotifaction) {
+                Log.i("test", "处理信鸽通知：" + xGNotifaction);
+                // 获取标签、内容、自定义内容
+                String title = xGNotifaction.getTitle();
+                String content = xGNotifaction.getContent();
+                String customContent = xGNotifaction
+                        .getCustomContent();
+                Log.i("title", title);
+                Log.i("content", content);
+                Log.i("customContent", customContent);
+                // 其它的处理
+                // 如果还要弹出通知，可直接调用以下代码或自己创建Notifaction，否则，本通知将不会弹出在通知栏中。
+//                xGNotifaction.doNotify();
+              }
+            });
+  }
+}

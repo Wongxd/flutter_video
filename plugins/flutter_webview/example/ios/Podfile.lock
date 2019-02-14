@@ -1,0 +1,29 @@
+PODS:
+  - dsBridge (3.0.2)
+  - Flutter (1.0.0)
+  - webview (0.0.1):
+    - dsBridge
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `.symlinks/flutter/ios`)
+  - webview (from `.symlinks/plugins/webview/ios`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - dsBridge
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  webview:
+    :path: ".symlinks/plugins/webview/ios"
+
+SPEC CHECKSUMS:
+  dsBridge: e1fab0ea5d98908fb86a106029bd4e53d093eb26
+  Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
+  webview: e1b0e84ad3473a1fbb27c864426decb45aae4875
+
+PODFILE CHECKSUM: 1e5af4103afd21ca5ead147d7b81d06f494f51a2
+
+COCOAPODS: 1.5.3

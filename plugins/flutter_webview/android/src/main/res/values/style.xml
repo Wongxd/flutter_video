@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="toolbar_theme">
+        <item name="colorControlNormal">#ffffff</item>
+        <item name="android:actionBarSize">46dp</item>
+    </style>
+
+</resources>

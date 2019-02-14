@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../dd_app/android/android.iml" filepath="$PROJECT_DIR$/../../../dd_app/android/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../android_intent/android/android_intent.iml" filepath="$PROJECT_DIR$/../../android_intent/android/android_intent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../dd_app/android/app/app.iml" filepath="$PROJECT_DIR$/../../../dd_app/android/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clipboard.iml" filepath="$PROJECT_DIR$/clipboard.iml" />
+      <module fileurl="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.flutter-io.cn/connectivity-0.3.1/android/connectivity.iml" filepath="$USER_HOME$/flutter/.pub-cache/hosted/pub.flutter-io.cn/connectivity-0.3.1/android/connectivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../loading/android/loading.iml" filepath="$PROJECT_DIR$/../../loading/android/loading.iml" />
+      <module fileurl="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.flutter-io.cn/package_info-0.3.2/android/package_info.iml" filepath="$USER_HOME$/flutter/.pub-cache/hosted/pub.flutter-io.cn/package_info-0.3.2/android/package_info.iml" />
+      <module fileurl="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.flutter-io.cn/path_provider-0.4.1/android/path_provider.iml" filepath="$USER_HOME$/flutter/.pub-cache/hosted/pub.flutter-io.cn/path_provider-0.4.1/android/path_provider.iml" />
+      <module fileurl="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.flutter-io.cn/share-0.5.2/android/share.iml" filepath="$USER_HOME$/flutter/.pub-cache/hosted/pub.flutter-io.cn/share-0.5.2/android/share.iml" />
+      <module fileurl="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.flutter-io.cn/shared_preferences-0.4.2/android/shared_preferences.iml" filepath="$USER_HOME$/flutter/.pub-cache/hosted/pub.flutter-io.cn/shared_preferences-0.4.2/android/shared_preferences.iml" />
+      <module fileurl="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.flutter-io.cn/sqflite-0.11.0+1/android/sqflite.iml" filepath="$USER_HOME$/flutter/.pub-cache/hosted/pub.flutter-io.cn/sqflite-0.11.0+1/android/sqflite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../toasty/android/toasty.iml" filepath="$PROJECT_DIR$/../../toasty/android/toasty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../tx_xg/android/tx_xg.iml" filepath="$PROJECT_DIR$/../../tx_xg/android/tx_xg.iml" />
+      <module fileurl="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.flutter-io.cn/url_launcher-3.0.3/android/url_launcher.iml" filepath="$USER_HOME$/flutter/.pub-cache/hosted/pub.flutter-io.cn/url_launcher-3.0.3/android/url_launcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../video_player/android/video_player.iml" filepath="$PROJECT_DIR$/../../video_player/android/video_player.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../webview/android/webview.iml" filepath="$PROJECT_DIR$/../../webview/android/webview.iml" />
+    </modules>
+  </component>
+</project>
