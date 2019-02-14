@@ -1,18 +1,21 @@
-import 'package:dd_app/utils/util.dart';
-import 'package:flutter/material.dart';
-import 'package:connectivity/connectivity.dart';
-import 'package:dd_app/pages/index.dart';
+import 'dart:io';
 import 'dart:async';
+
+import 'package:dd_app/mixins/pageState.dart';
+import 'package:dd_app/utils/db/record.dart';
+import 'package:dd_app/utils/action.dart';
+import 'package:dd_app/utils/util.dart';
+import 'package:dd_app/pages/index.dart';
 import 'package:dd_app/pages/classify.dart';
 import 'package:dd_app/pages/user.dart';
+
+import 'package:flutter/material.dart';
+import 'package:connectivity/connectivity.dart';
 import 'package:toasty/toasty.dart';
 import 'package:clipboard/clipboard.dart';
 import 'package:tx_xg/tx_xg.dart';
-import 'package:dd_app/utils/action.dart';
-import 'dart:io';
 import 'package:video_player/video_player.dart';
-import 'package:dd_app/mixins/pageState.dart';
-import 'package:dd_app/utils/db/record.dart';
+
 
 final String AlipayKEY = "Nl7FJ976sg";
 
@@ -28,10 +31,8 @@ class AppPage extends StatefulWidget {
 }
 
 class _AppPageState extends State<AppPage> {
-  final GlobalKey<IndexPageState> _indexPageKey =
-      new GlobalKey<IndexPageState>();
-  final GlobalKey<ClassifyPageState> _classifyPageKey =
-      new GlobalKey<ClassifyPageState>();
+  final GlobalKey<IndexPageState> _indexPageKey = new GlobalKey<IndexPageState>();
+  final GlobalKey<ClassifyPageState> _classifyPageKey = new GlobalKey<ClassifyPageState>();
   final GlobalKey<UserPageState> _userPageKey = new GlobalKey<UserPageState>();
 
   static int lastExitTime = 0;
@@ -39,6 +40,7 @@ class _AppPageState extends State<AppPage> {
   List<Widget> pages = [];
   dynamic subscription;
   int currentIndex = 0;
+
   @override
   initState() {
     super.initState();

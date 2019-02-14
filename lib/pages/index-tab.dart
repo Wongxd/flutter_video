@@ -141,26 +141,26 @@ class _IndexTabPageState extends State<IndexTabPage>
     double width = MediaQuery.of(context).size.width;
     List<Widget> w = [];
     // banner
-    if (items["banner"].length != 0) {
-      w.add(
-        Container(
-          height: width * 0.65,
-          child: Swiper(
-            itemBuilder: (BuildContext context, int index) {
-              Map banner = items["banner"][index];
-              return _buildBanner(banner);
-            },
-            itemCount: items["banner"].length,
-            // viewportFraction: 0.93,
-            // scale: 0.97,
-            autoplay: true,
-            pagination: SwiperPagination(
-              alignment: Alignment.bottomRight,
-            ),
-          ),
-        ),
-      );
-    }
+//    if (items["banner"].length != 0) {
+//      w.add(
+//        Container(
+//          height: width * 0.65,
+//          child: Swiper(
+//            itemBuilder: (BuildContext context, int index) {
+//              Map banner = items["banner"][index];
+//              return _buildBanner(banner);
+//            },
+//            itemCount: items["banner"].length,
+//            // viewportFraction: 0.93,
+//            // scale: 0.97,
+//            autoplay: true,
+//            pagination: SwiperPagination(
+//              alignment: Alignment.bottomRight,
+//            ),
+//          ),
+//        ),
+//      );
+//    }
 
     // 最近更新的
     if (items["latests"].length != 0) {
@@ -176,10 +176,10 @@ class _IndexTabPageState extends State<IndexTabPage>
       w.add(_buildTitle("近期热门的"));
       w.add(Wrap(runSpacing: 4.0, children: _buildGrid(items["hots"])));
     }
-    // 广告2
-    if (items["ads"][1] != null) {
-      w.add(_buildAd(items["ads"][1]));
-    }
+//    // 广告2
+//    if (items["ads"][1] != null) {
+//      w.add(_buildAd(items["ads"][1]));
+//    }
 
     return w;
   }
