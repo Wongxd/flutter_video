@@ -140,7 +140,7 @@ class _IndexTabPageState extends State<IndexTabPage>
   List<Widget> _buildView() {
     double width = MediaQuery.of(context).size.width;
     List<Widget> w = [];
-    // banner
+//    // banner
 //    if (items["banner"].length != 0) {
 //      w.add(
 //        Container(
@@ -167,10 +167,10 @@ class _IndexTabPageState extends State<IndexTabPage>
       w.add(_buildTitle("最近更新的"));
       w.add(Wrap(runSpacing: 4.0, children: _buildGrid(items["latests"])));
     }
-    // 广告 1
-    if (items["ads"][0] != null) {
-      w.add(_buildAd(items["ads"][0]));
-    }
+//    // 广告 1
+//    if (items["ads"][0] != null) {
+//      w.add(_buildAd(items["ads"][0]));
+//    }
     // 近期热门的
     if (items["hots"].length != 0) {
       w.add(_buildTitle("近期热门的"));
